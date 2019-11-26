@@ -1,5 +1,5 @@
 make: main.o push.o pop.o display.o
-	gcc -o Arith main.o push.o display.o pop.o
+	gcc -o Stack main.o push.o display.o pop.o
 
 main.o: main.c
 	gcc -o main.o -c main.c
