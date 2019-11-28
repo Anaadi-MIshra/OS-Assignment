@@ -1,0 +1,8 @@
+   text	   data	    bss	    dec	    hex	filename
+    327	      0	      0	    327	    147	main.o
+    292	      0	      0	    292	    124	main0.o
+    335	      0	      0	    335	    14f	main1.o
+    311	      0	      0	    311	    137	main2.o
+    311	      0	      0	    311	    137	main3.o
+    311	      0	      0	    311	    137	main4.o
+previous output is for sizes of the optimisations by -Os, O1, O2
