@@ -8,9 +8,9 @@
 
 int main(){
 
-int x=4;
 
-    while(x--){
+
+    while(1){
      unsigned char temp[100] = {0};
      unsigned char *buff[10] ={NULL};
      
@@ -28,7 +28,7 @@ int x=4;
 
      else strcat(path, temp);
 
-     //printf("02 %s\n", path);
+     
      
      char* token = strtok(path, " ");
      int i=0;
@@ -36,7 +36,6 @@ int x=4;
     while ( token != NULL) { 
      
           buff[i] = token;
-         // printf("%d %s\n",i, buff[i]);
           i++;
         token = strtok(NULL, " "); 
 
@@ -51,12 +50,7 @@ int x=4;
      }
      if(0 == x)
      {
-        //  printf("CHILD HERE\n");
-         // close(pipefd[1]);
-            //unsigned char command[20];
-         // read( pipefd[0], command, 20);
-          //printf("command read : %s\n", command);
-         execvp(buff[0],buff);
+        execvp(buff[0],buff);
           printf("Faulty Command\n");
         
           exit(1);
@@ -64,11 +58,7 @@ int x=4;
 
      else
      {
-   //       printf("PARENT HERE\n");
-  //       // close(pipefd[0]);
-       //  write(pipefd[1], path, strlen(path));
-       //  printf("Command Sent to child\n"); 
-  //  
+  
      sleep(1);
  }
 
